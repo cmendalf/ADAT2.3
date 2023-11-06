@@ -57,7 +57,7 @@ public class Departamento {
 
     @Override
     public String toString() {
-        return "DEPARTAMENTO" + "\nnumDepartamento: " + numDepartamento + "\nNome Departamento: " + nomeDepartamento + "\nNss Dirige: " + nssDirige + "\nData Direccion: " + dataDireccion;
+        return "DEPARTAMENTO" + "\nNumero departamento: " + numDepartamento + "\nNome Departamento: " + nomeDepartamento + "\nNss Dirige: " + nssDirige + "\nData Direccion: " + dataDireccion;
     }
     
     

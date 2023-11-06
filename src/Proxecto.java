@@ -55,7 +55,7 @@ public class Proxecto {
 
     @Override
     public String toString() {
-        return "PROXECTO" + "\nnumProxecto: " + numProxecto + "\nNome Proxecto: " + nomeProxecto + "\nLugar: " + lugar + "\nNumero Departamento Controla: " + numDepartamentoControla;
+        return "PROXECTO" + "\nNumero Proxecto: " + numProxecto + "\nNome Proxecto: " + nomeProxecto + "\nLugar: " + lugar + "\nNumero Departamento Controla: " + numDepartamentoControla;
     }
     
     

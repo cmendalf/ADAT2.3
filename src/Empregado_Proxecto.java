@@ -42,7 +42,7 @@ public class Empregado_Proxecto {
 
     @Override
     public String toString() {
-        return "Empregado_Proxecto" + "\nnssEmpregado: " + nssEmpregado + "\nnumProxecto: " + numProxecto + "\nhorasSemanais: " + horasSemanais;
+        return "EMPREGADO PROXECTO: " + "\nNss Empregado: " + nssEmpregado + "\nNumero Proxecto: " + numProxecto + "\nHoras Semanais: " + horasSemanais;
     }
     
     
