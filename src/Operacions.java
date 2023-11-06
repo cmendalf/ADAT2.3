@@ -17,6 +17,7 @@ Crea un programa en java cun método que cree unha táboa na base de datos BDEmp
 gardar os lugares onde está situado un departamento (un departamento pode estar situado en máis dun lugar).
 A táboa chámase Lugar e ten dous campos: Lugar que almacena o nome do lugar e Num_dep
  */
+import static java.lang.String.valueOf;
 import java.sql.*;
 import java.util.*;
 import java.util.Date;
@@ -81,7 +82,7 @@ public class Operacions {
 
             engade.setString(8, String.valueOf(cp));
             engade.setString(9, localidade);
-            engade.setDate(10, Date.valueOf(dataNacemento));
+            engade.setDate(10, Date valueOf(dataNacemento)); 
             engade.setDouble(11, salario);
             engade.setString(12, String.valueOf(sexo));
             engade.setString(13, nssSupervisa);
@@ -100,7 +101,7 @@ public class Operacions {
         String lugar = proxecto.getLugar();
         int numDepartamentoControla = proxecto.getNumDepartamentoControla();
         //Creamos la cadena SQL 
-        String cadeaSql = "INSERT INTO Proxecto (Num_proxecto, Nome_proxecto, Lugar, Num_departamento) VALUES (numProxecto, nomeProxecto, lugar, numDepartamentoControla";
+        String cadeaSql = "INSERT INTO Proxecto (Num_proxecto, Nome_proxecto, Lugar, Num_departamento) VALUES (?, ?";
         int resultado;
 //Preparamos la plantilla 
         try (PreparedStatement engadeP = conexion.prepareStatement(cadeaSql)) {
@@ -115,6 +116,9 @@ public class Operacions {
         return resultado;
     }
 
-//consultar datos dos empregados 
-//
+    //UPDATE EMPREGADO 
+    public int updateEmpregado(Empregado empregado) throws Exception{
+        String cadeaSql = "UPDATE Empregado SET Nome=?,Apelido_1=?,Apelido_2=?,Rua=?,Numero_rua=?,Piso=?,CP=?, Localidade=?,Data_nacemento=?,Salario=?,Sexo=?, NSS_Supervisa=?, Num_departamento_pertenece=? WHERE NSS=?"; 
+    }
+//listarlos, crear tabla, updateEmpregado 
 }
