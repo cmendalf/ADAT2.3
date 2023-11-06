@@ -1,4 +1,7 @@
 
+import java.util.Date;
+
+
 
 /**
  *
@@ -8,10 +11,10 @@ public class Departamento {
     private int numDepartamento; 
     private String nomeDepartamento; 
     private String nssDirige; 
-    private String dataDireccion; 
+    private Date dataDireccion; 
 
     //Constructor parametrizado 
-    public Departamento(int numDepartamento, String nomeDepartamento, String nssDirige, String dataDireccion) {
+    public Departamento(int numDepartamento, String nomeDepartamento, String nssDirige, Date dataDireccion) {
         this.numDepartamento = numDepartamento;
         this.nomeDepartamento = nomeDepartamento;
         this.nssDirige = nssDirige;
@@ -44,17 +47,17 @@ public class Departamento {
         this.nssDirige = nssDirige;
     }
 
-    public String getDataDireccion() {
+    public Date getDataDireccion() {
         return dataDireccion;
     }
 
-    public void setDataDireccion(String dataDireccion) {
+    public void setDataDireccion(Date dataDireccion) {
         this.dataDireccion = dataDireccion;
     }
 
     @Override
     public String toString() {
-        return "DEPARTAMENTO" + "\nnumDepartamento=" + numDepartamento + "\nnomeDepartamento=" + nomeDepartamento + "\nnssDirige=" + nssDirige + "\ndataDireccion=" + dataDireccion;
+        return "DEPARTAMENTO" + "\nnumDepartamento: " + numDepartamento + "\nNome Departamento: " + nomeDepartamento + "\nNss Dirige: " + nssDirige + "\nData Direccion: " + dataDireccion;
     }
     
     
