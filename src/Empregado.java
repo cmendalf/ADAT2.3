@@ -1,6 +1,5 @@
 
-import java.util.Date;
-
+import java.time.LocalDate;
 
 /**
  *
@@ -16,14 +15,14 @@ public class Empregado {
     private String piso; 
     private String cp; 
     private String localidade; 
-    private Date dataNacemento; 
+    private LocalDate dataNacemento; 
     private double salario; 
     private String sexo; 
     private String nssSupervisa; 
     private int numDepartamentoPertenece; 
 
     //Constructor parametrizado 
-    public Empregado(String nome, String apelido1, String apelido2, String NSS, String rua, int numeroRua, String piso, String cp, String localidade, Date dataNacemento, double salario, String sexo, String nssSupervisa, int numDepartamentoPertenece) {
+    public Empregado(String nome, String apelido1, String apelido2, String NSS, String rua, int numeroRua, String piso, String cp, String localidade, LocalDate dataNacemento, double salario, String sexo, String nssSupervisa, int numDepartamentoPertenece) {
         this.nome = nome;
         this.apelido1 = apelido1;
         this.apelido2 = apelido2;
@@ -114,11 +113,11 @@ public class Empregado {
         this.localidade = localidade;
     }
 
-    public Date getDataNacemento() {
+    public LocalDate getDataNacemento() {
         return dataNacemento;
     }
 
-    public void setDataNacemento(Date dataNacemento) {
+    public void setDataNacemento(LocalDate dataNacemento) {
         this.dataNacemento = dataNacemento;
     }
 
@@ -157,7 +156,7 @@ public class Empregado {
     //ToString()
     @Override
     public String toString() {
-        return "Empregado" + "\nnome=" + nome + ", apelido1=" + apelido1 + ", apelido2=" + apelido2 + ", NSS=" + NSS + ", rua=" + rua + ", numeroRua=" + numeroRua + ", piso=" + piso + ", cp=" + cp + ", localidade=" + localidade + ", dataNacemento=" + dataNacemento + ", salario=" + salario + ", sexo=" + sexo + ", nssSupervisa=" + nssSupervisa + ", numDepartamentoPertenece=" + numDepartamentoPertenece + '}';
+        return "EMPREGADO" + "\nNome: " + nome + "\nApelido1: " + apelido1 + ", apelido2: " + apelido2 + "\nNSS=" + NSS + "\nRua: " + rua + "\nNumeroRua: " + numeroRua + "\nPiso: " + piso + "\ncp: " + cp + "\nlocalidade: " + localidade + "\nData de Nacemento: " + dataNacemento + ", salario=" + salario + "\nsexo=" + sexo + "\nnssSupervisa: " + nssSupervisa + "\nNumDepartamentoPertenece: " + numDepartamentoPertenece;
     }
     
     
