@@ -14,16 +14,16 @@ public class Empregado {
     private String rua; 
     private int numeroRua; 
     private String piso; 
-    private char cp; 
+    private String cp; 
     private String localidade; 
     private Date dataNacemento; 
     private double salario; 
-    private char sexo; 
+    private String sexo; 
     private String nssSupervisa; 
     private int numDepartamentoPertenece; 
 
     //Constructor parametrizado 
-    public Empregado(String nome, String apelido1, String apelido2, String NSS, String rua, int numeroRua, String piso, char cp, String localidade, Date dataNacemento, double salario, char sexo, String nssSupervisa, int numDepartamentoPertenece) {
+    public Empregado(String nome, String apelido1, String apelido2, String NSS, String rua, int numeroRua, String piso, String cp, String localidade, Date dataNacemento, double salario, String sexo, String nssSupervisa, int numDepartamentoPertenece) {
         this.nome = nome;
         this.apelido1 = apelido1;
         this.apelido2 = apelido2;
@@ -98,11 +98,11 @@ public class Empregado {
         this.piso = piso;
     }
 
-    public char getCp() {
+    public String getCp() {
         return cp;
     }
 
-    public void setCp(char cp) {
+    public void setCp(String cp) {
         this.cp = cp;
     }
 
@@ -130,11 +130,11 @@ public class Empregado {
         this.salario = salario;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
